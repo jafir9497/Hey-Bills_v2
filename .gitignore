@@ -1,0 +1,346 @@
+# Hey-Bills v2 - Flutter/Node.js Project .gitignore
+
+#=============================================================================#
+# FLUTTER/DART SPECIFIC
+#=============================================================================#
+
+# Flutter build outputs
+**/build/
+**/android/build/
+**/ios/build/
+**/linux/build/
+**/macos/build/
+**/web/build/
+**/windows/build/
+
+# Flutter tools
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Generated files
+**.g.dart
+**.freezed.dart
+**.mocks.dart
+**.config.dart
+**/generated/
+**/generated_plugin_registrant.dart
+
+# Coverage and symbolication
+coverage/
+**/coverage/
+*.lcov
+**/*.dSYM/
+
+#=============================================================================#
+# ANDROID DEVELOPMENT
+#=============================================================================#
+
+# Gradle files
+.gradle
+local.properties
+gradle.properties
+**/gradle-wrapper.jar
+**/gradle-wrapper.properties
+
+# Android Studio
+.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+
+# Keystore and signing
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+keystore.properties
+
+# NDK
+obj/
+
+#=============================================================================#
+# iOS DEVELOPMENT
+#=============================================================================#
+
+# Xcode
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/UserInterfaceState.xcuserstate
+**/ios/.generated/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# CocoaPods
+**/ios/Pods/
+**/ios/Podfile.lock
+**/macos/Pods/
+**/macos/Podfile.lock
+
+#=============================================================================#
+# NODE.JS DEVELOPMENT  
+#=============================================================================#
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Build outputs
+dist/
+build/
+tmp/
+temp/
+
+# npm/yarn cache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+#=============================================================================#
+# ENVIRONMENT & SECURITY
+#=============================================================================#
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# API Keys and certificates
+*.pem
+*.p8
+*.p12
+*.cer
+*.crt
+*.key
+*.pfx
+api-keys.json
+service-account.json
+google-services.json
+GoogleService-Info.plist
+firebase-config.js
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+#=============================================================================#
+# IDE & EDITOR FILES
+#=============================================================================#
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ/Android Studio  
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.metadata
+.project
+.classpath
+.settings/
+bin/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+#=============================================================================#
+# OPERATING SYSTEM FILES
+#=============================================================================#
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+#=============================================================================#
+# TESTING & COVERAGE
+#=============================================================================#
+
+# Test outputs
+test/
+tests/output/
+*.test
+coverage/
+.coverage
+.pytest_cache/
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jest
+/coverage/
+/.jest/
+
+# JUnit
+TEST-*.xml
+junit.xml
+
+#=============================================================================#
+# LOGGING & DEBUGGING
+#=============================================================================#
+
+# Log files
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Debug files
+*.debug
+*.trace
+
+#=============================================================================#
+# DEVELOPMENT TOOLS
+#=============================================================================#
+
+# Docker
+.dockerignore
+Dockerfile.dev
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+
+# CI/CD
+.github/workflows/temp/
+
+# Backup and archive files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+#=============================================================================#
+# CLAUDE FLOW COORDINATION (PRESERVE)
+#=============================================================================#
+
+# Keep Claude Flow coordination files
+!coordination/
+!memory/
+!.claude-flow/
+!claude-flow*
+
+#=============================================================================#
+# PROJECT SPECIFIC
+#=============================================================================#
+
+# Hey-Bills specific ignores
+receipts/uploads/
+storage/temp/
+cache/
+analytics/raw/
+
+# Documentation builds (except source)
+docs/_site/
+docs/.bundle/
+docs/vendor/
+
+# Supabase local development
+supabase/.branches
+supabase/.temp
