@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "key": "swarm/backend_setup/summary",
+      "value": "Express.js backend initialized with comprehensive middleware stack: authentication (Supabase JWT), validation (Joi), file uploads (multer), security (helmet, CORS, rate limiting), logging, database utilities, error handling. All middleware configured for production with proper error handling, logging, and security measures.",
+      "namespace": "default",
+      "timestamp": 1756649536142
+    },
+    {
+      "key": "swarm/backend_setup/middleware_details",
+      "value": "Enhanced middleware stack includes: (1) Authentication: Supabase JWT verification with optional auth, admin-only, and resource ownership checks. (2) File Uploads: Multer with security validation, file type checking, size limits, temporary file cleanup. (3) Request tracking: Unique request IDs, timeouts, health check bypasses. (4) Security: Helmet CSP, CORS with origin validation, rate limiting with bypass for health checks. (5) Validation: Joi schemas for all input validation with detailed error messages.",
+      "namespace": "default",
+      "timestamp": 1756649578215
+    },
+    {
+      "key": "swarm/backend_setup/architecture",
+      "value": "Hey-Bills Express.js backend follows clean architecture: /src (source code), /middleware (auth, uploads, validation), /utils (logger, database, error handling), /config (Supabase), /routes (API endpoints), /controllers (business logic), /services (external integrations), /tests (comprehensive testing). All configured for production with environment variables, proper error handling, logging, and security measures.",
+      "namespace": "default",
+      "timestamp": 1756649580277
+    }
+  ]
+}

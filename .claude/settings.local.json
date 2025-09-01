@@ -2,13 +2,28 @@
   "permissions": {
     "allow": [
       "mcp__ruv-swarm",
-      "mcp__claude-flow"
+      "mcp__claude-flow",
+      "mcp__supabase__get_project_url",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__get_anon_key",
+      "Bash(supabase status:*)",
+      "Bash(supabase login:*)",
+      "Bash(supabase projects:*)",
+      "Bash(supabase link:*)",
+      "Bash(touch:*)",
+      "Bash(supabase db push:*)",
+      "Bash(npm install)",
+      "Bash(npm test:*)",
+      "mcp__supabase__apply_migration",
+      "Bash(npm start)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(flutter pub get)"
     ],
     "deny": []
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "claude-flow",
     "ruv-swarm"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }

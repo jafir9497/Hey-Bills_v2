@@ -3,9 +3,22 @@ const router = express.Router();
 
 // Import route modules
 const healthRoutes = require('./health');
+const authRoutes = require('../src/routes/auth');
+const ocrRoutes = require('../src/routes/ocr');
+const receiptRoutes = require('../src/routes/receipts');
+const warrantyRoutes = require('../src/routes/warranties');
+// TODO: Fix axios dependency for chat routes
+// const chatRoutes = require('../src/routes/chat');
+// const searchRoutes = require('../src/routes/search');
 
 // API route definitions
 router.use('/health', healthRoutes);
+router.use('/auth', authRoutes);
+router.use('/ocr', ocrRoutes);
+router.use('/receipts', receiptRoutes);
+router.use('/warranties', warrantyRoutes);
+// router.use('/chat', chatRoutes);
+// router.use('/search', searchRoutes);
 
 // Root API endpoint
 router.get('/', (req, res) => {
@@ -17,7 +30,14 @@ router.get('/', (req, res) => {
     endpoints: {
       health: '/api/health',
       readiness: '/api/health/ready',
-      liveness: '/api/health/live'
+      liveness: '/api/health/live',
+      auth: '/api/auth',
+      ocr: '/api/ocr',
+      receipts: '/api/receipts',
+      warranties: '/api/warranties'
+      // TODO: Enable after fixing dependencies
+      // chat: '/api/chat',
+      // search: '/api/search'
     }
   });
 });
@@ -31,7 +51,11 @@ router.use('*', (req, res) => {
       root: '/api',
       health: '/api/health',
       readiness: '/api/health/ready',
-      liveness: '/api/health/live'
+      liveness: '/api/health/live',
+      auth: '/api/auth',
+      ocr: '/api/ocr',
+      receipts: '/api/receipts',
+      warranties: '/api/warranties'
     }
   });
 });
