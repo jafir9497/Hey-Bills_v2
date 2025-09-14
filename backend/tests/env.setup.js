@@ -5,9 +5,9 @@
 
 // Set test environment variables before other modules are loaded
 process.env.NODE_ENV = 'test';
-process.env.SUPABASE_URL = process.env.SUPABASE_URL || 'https://duedldhbaqcxbmqvjhbg.supabase.co';
-process.env.SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1ZWRsZGhiYXFjeGJtcXZqaGJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY2MzE2ODUsImV4cCI6MjA3MjIwNzY4NX0.swlWeX8JmjKiSyLQ8ghtbP-N6droj2avDaLwXs_eSbo';
-process.env.SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1ZWRsZGhiYXFjeGJtcXZqaGJnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NjYzMTY4NSwiZXhwIjoyMDcyMjA3Njg1fQ.pYWeBCYYt1iKsuR90N7pF-WfP1UvNDeKJxKxc3mH6q4';
+process.env.SUPABASE_URL = process.env.SUPABASE_URL;
+process.env.SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+process.env.SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 // Additional test environment variables
 process.env.PORT = '3001';
